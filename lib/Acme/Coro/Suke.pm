@@ -11,7 +11,7 @@ our @EXPORT = qw/benzo/;
 
 our $SERIF = Encode::encode('utf-8', "うわぁ…べんぞうさんの中…すごくあったかいナリぃ… \n");
 
-sub benzo(&) {
+sub benzo(&) { ##
     my $sub = shift;
     async {
         Coro::on_enter {
